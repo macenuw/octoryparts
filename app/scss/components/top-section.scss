@@ -1,0 +1,18 @@
+.top-section {
+  align-items: center;
+  padding: 13px 24px;
+  justify-content: center;
+  width: 100%;
+
+  &--btns {
+    justify-content: flex-end;
+
+    .top-section__logo {
+      flex-grow: 0.4;
+    }
+  }
+
+  &__btn {
+    padding: 7px 11px;
+  }
+}
