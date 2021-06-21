@@ -1,3 +1,59 @@
 .confirm {
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(800px - 64px);
+
+  &__form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 47px 55px 57px;
+    max-width: 730px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 22px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__input {
+    max-width: 201px;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  &__btn {
+    padding: 11px 33px;
+    background-color: $btn-color;
+    border-color: transparent;
+    cursor: pointer;
+    margin-bottom: 22px;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: $btn-color;
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+  &__subtext {
+    line-height: 1.5;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: underline;
+  }
 }
