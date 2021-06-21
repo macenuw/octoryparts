@@ -1,22 +1,69 @@
 .header {
   align-items: center;
-  padding: 13px 24px;
-  justify-content: flex-end;
+  padding: 13px 24px 13px 7%;
+  justify-content: space-between;
   width: 100%;
-  position: relative;
-  min-height: 64px;
 
-  &__logo {
-    position: absolute;
-    left: calc(50% - 72px);
-    top: 13px;
-  }
+
 
   &__btn {
     padding: 7px 11px;
     min-width: 120px;
-    &--join{
+    cursor: pointer;
+
+    &--join {
       padding: 7px 8.5px;
+    }
+
+    &--cart {
+      padding: 5px;
+      min-width: 26px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 5px;
+
+      &:hover,
+      &:active {
+        background-color: $bg-gray;
+      }
+
+      &:active {
+        border-color: $btn-color;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  .header__btn--join,
+  .header__btn--sign-in,
+  .header__btn--quit {
+    display: none;
+  }
+
+  &__auth {
+
+    .header__btn--join,
+    .header__btn--sign-in {
+      display: none;
+    }
+
+    .header__btn--quit {
+      display: block;
+    }
+  }
+
+  &__no-auth {
+
+    .header__btn--join,
+    .header__btn--sign-in {
+      display: block;
+    }
+
+    .header__btn--quit {
+      display: none;
     }
   }
 }
