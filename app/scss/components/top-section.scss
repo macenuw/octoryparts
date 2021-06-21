@@ -1,18 +1,19 @@
 .top-section {
   align-items: center;
   padding: 13px 24px;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
+  position: relative;
+  min-height: 64px;
 
-  &--btns {
-    justify-content: flex-end;
-
-    .top-section__logo {
-      flex-grow: 0.4;
-    }
+  &__logo {
+    position: absolute;
+    left: calc(50% - 72px);
+    top: 13px;
   }
 
   &__btn {
     padding: 7px 11px;
+    width: 120px;
   }
 }
