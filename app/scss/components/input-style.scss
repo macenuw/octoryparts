@@ -1,6 +1,11 @@
 .input-style {
-  padding: 13px 17px;
+  padding: 10px 17px;
   font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  width: 295px;
+  max-width: 100%;
+  
 
   &:placeholder {
     font-size: 16px;

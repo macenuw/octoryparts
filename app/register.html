@@ -35,11 +35,39 @@
   </header>
   <main>
     <section class="register">
-      <div class="container">
+      <div class="container ">
         <div class="register__wrapper">
            <h1 class="register__title">Регистрация</h1>
-           <form class="register-form" action="#">
-             
+           <form class="register__form" action="#">
+            <div class="register__form-top__btn-inner d-flex space-between">
+              <input class="register__form-top__btn-buyer" type="radio">
+              <input class="register__form-top__btn-seller" type="radio">
+            </div>
+            <input class="register__form-input__name input-style" 
+            type="text" placeholder="Имя">
+            <input class="register__form-input__last-name input-style" 
+            type="text" placeholder="Фамилия">
+            <input class="register__form-input__name-org input-style" 
+            type="text" placeholder="Название вашей организации">
+            <div class="register__form-min__input__inner d-flex space-between">
+              <input class="register__form-input__left input-style" 
+            type="text" placeholder="ИНН">
+            <input class="register__form-input__right input-style" 
+            type="text" placeholder="КПП">
+            </div>
+            <textarea class="register__form-textarea input-style" rows="3" placeholder="Юридический адрес"></textarea>
+            <input class="register__form-input__name input-style" 
+            type="number" placeholder="Телефон">
+            <input class="register__form-input__last-name input-style" 
+            type="text" placeholder="Адрес электронной почты">
+            <input class="register__form-input__name-org input-style" 
+            type="password" placeholder="Придумайте пароль">
+            <button  class="register__form-btn button " type="submit">Зарегистрироваться</button>
+            <p class="register__form-bottom">
+              У вас уже есть аккаунт?  <a href="#" class="register__form-bottom__link">
+                Войти
+            </a> 
+            </p>
            </form>
         </div>
       </div>

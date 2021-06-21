@@ -1,0 +1,53 @@
+.register {
+    background-color: $bg-gray;
+    min-height: 800px;
+
+    &__wrapper {
+        padding-top: 25px;
+        max-width: 385px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__form{
+        padding: 50px;
+        max-width: 395px;
+        width: 100%;
+        margin: 0 auto;
+       
+       
+    }
+    &__form-top__btn-inner{
+       margin-bottom: 12px;
+      
+    }
+    &__form-min__input__inner{
+        input{
+           max-width: 135px ; 
+           border: 1px solid #000;
+        }
+    }
+    &__form-textarea{
+        border-radius: 4px;
+        resize: none;
+        border: 1px solid #000;
+    }
+    &__form-btn{
+        padding: 17px 48px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    &__form-bottom__link{
+        text-decoration: underline;
+        text-align: center;
+        display: inline;
+    }
+    &__form-bottom{
+        color: #000;
+        a{
+            color: inherit;
+        }
+    }
+}
