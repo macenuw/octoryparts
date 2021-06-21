@@ -7,4 +7,5 @@ $(function () {
     $(".submenu__link").removeClass("submenu__link--active");
     $(this).toggleClass("submenu__link--active");
   });
+  $('.home__select').styler();
 });

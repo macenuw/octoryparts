@@ -1,141 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <main>
-      <div class="wrapper d-flex container">
-        <aside class="menu__wrapper">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link menu__link--main" href="#"> Главная </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--me" href="#"> Мои данные </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--dropdown" href="#">
-                  Мои заказы
-                </a>
-                <ul class="submenu submenu__orders">
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--order-now" href="#">
-                      Текущие заказы
-                    </a>
-                  </li>
-                  <li class="submenu__item">
-                    <a
-                      class="submenu__link submenu__link--history-order"
-                      href="#"
-                    >
-                      История заказов
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--dropdown" href="#">
-                  Мой парк техники
-                </a>
-                <ul class="submenu submenu__my-park">
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--car" href="#">
-                      Машина
-                    </a>
-                  </li>
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--insurance" href="#">
-                      Страхование
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--cto" href="#"> Мое СТО </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--special" href="#">
-                  Спецпредложения
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--dropdown" href="#">
-                  Поиск запчастей
-                </a>
-                <ul class="submenu submenu__search">
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--number" href="#">
-                      Поиск по номеру
-                    </a>
-                  </li>
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--pattern" href="#">
-                      Поиск по схеме
-                    </a>
-                  </li>
-                  <li class="submenu__item">
-                    <a class="submenu__link submenu__link--list" href="#">
-                      Поиск по списку
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        <section class="content">
-          <header class="header d-flex">
-            <a href="#" class="header__logo logo">
-              <img class="logo__img" src="./images/logo.png" alt="logo OctoryParts"/>
-            </a>
-            <div class="header__btns">
-              <button
-                class="header__btn header__btn--sign-in button"
-                type="button"
-              >
-                Регистрация
-              </button>
-              <button
-                class="header__btn header__btn--join button"
-                type="button"
-              >
-                Авторизация
-              </button>
-              <button
-                class="header__btn header__btn--quit button"
-                type="button"
-              >
-                Выход
-              </button>
-            </div>
-          </header>
-          <div class="home">
-            <h2 class="home__title">Главная</h2>
-            <form class="home__form" action="#">
-              <div class="home__select-inner d-flex">
-                <select class="home__select home__select-brand" name="brand">
-                  <option value="sunward">sunward</option>
-                  <option value="commins">commins</option>
-                  <option value="volvo">volvo</option>
-                </select>
-                <select class="home__select home__select-model" name="model">
-                  <option value="something">something</option>
-                  <option value="something">something</option>
-                  <option value="something">something</option>
-                </select>
-              </div>
-              <button class="home__btn" type="submit">Подобрать</button>
-            </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="wrapper d-flex container">
+      <aside class="menu__wrapper">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--main" href="#"> Главная </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--me" href="#"> Мои данные </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                Мои заказы
+              </a>
+              <ul class="submenu submenu__orders">
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--order-now" href="#">
+                    Текущие заказы
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--history-order" href="#">
+                    История заказов
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                Мой парк техники
+              </a>
+              <ul class="submenu submenu__my-park">
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--car" href="#">
+                    Машина
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--insurance" href="#">
+                    Страхование
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--cto" href="#"> Мое СТО </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--special" href="#">
+                Спецпредложения
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                Поиск запчастей
+              </a>
+              <ul class="submenu submenu__search">
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--number" href="#">
+                    Поиск по номеру
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--pattern" href="#">
+                    Поиск по схеме
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--list" href="#">
+                    Поиск по списку
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="content">
+        <header class="header d-flex">
+          <a href="#" class="header__logo logo">
+            <img class="logo__img" src="./images/logo.png" alt="logo OctoryParts" />
+          </a>
+          <div class="header__btns">
+            <button class="header__btn header__btn--sign-in button bold" type="button">
+              Регистрация
+            </button>
+            <button class="header__btn header__btn--join button bold" type="button">
+              Авторизация
+            </button>
+            <button class="header__btn header__btn--quit button bold" type="button">
+              Выход
+            </button>
           </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer"></footer>
-    <script src="js/main.min.js"></script>
-  </body>
+        </header>
+        <div class="home border">
+          <h2 class="home__title fs-20 bold">Главная</h2>
+          <form class="home__form" action="#">
+            <div class="home__select-inner d-flex">
+              <select class="home__select home__select--brand shadow" name="brand">
+                <option value="" selected disabled hidden>
+                  Выберите марку
+                </option>
+                <option value="sunward">SUNWARD</option>
+                <option value="commins">COMMINS</option>
+                <option value="volvo">VOLVO</option>
+              </select>
+              <select class="home__select home__select--model shadow" name="model">
+                <option value="" selected disabled hidden>Выберите модель</option>
+                <option value="something">something</option>
+                <option value="something">something</option>
+                <option value="something">something</option>
+              </select>
+            </div>
+            <button class="home__btn fs-19 bold" type="submit">Подобрать</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+  <script src="js/main.min.js"></script>
+</body>
 </html>

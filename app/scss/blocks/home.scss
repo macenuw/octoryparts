@@ -1,0 +1,89 @@
+.home {
+  padding: 43px 55px;
+  height: calc(100vh - 64px);
+
+  &__title {
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+
+  &__select {
+    max-width: 406px;
+    width: 100%;
+    margin-bottom: 160px;
+
+    &--brand {
+      margin-right: 58px;
+    }
+  }
+
+  .jq-selectbox {
+    &__select {
+      background: white;
+      padding: 4px 14px;
+      font-family: 'Roboto', sans-serif;
+      border: 2px solid black;
+    }
+
+    &__select-text {
+      font-size: 16px;
+      line-height: 24px;
+      color: black;
+    }
+
+    &__trigger {
+      border: none;
+    }
+
+    &__trigger-arrow {
+      border: none;
+      background-image: url('../../images/arrow-down-black.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 9px;
+      width: 15px;
+      top: 11px;
+      right: 11px;
+    }
+
+    &__dropdown {
+      box-shadow: none;
+    }
+
+    &__dropdown li {
+      padding: 8px 14px 7px;
+      font-size: 16px;
+      line-height: 1.5;
+
+      &.disabled {
+        display: none;
+      }
+
+      &:not(:nth-child(2)) {
+        border-top: 1px solid black;
+      }
+
+      &:hover {
+        background-color: $hover-color;
+        color: black;
+      }
+    }
+  }
+
+  &__btn {
+    line-height: 1.29;
+    padding: 13px 47.5px;
+    color: #F0F4F2;
+    background-color: $btn-color;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: transparent;
+    transition: 0.3s;
+
+    &:hover {
+      color: $btn-color;
+      border-color: $btn-color;
+      background-color: transparent;
+    }
+  }
+}
