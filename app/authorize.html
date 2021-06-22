@@ -36,14 +36,15 @@
             </button>
           </div>
         </header>
-        <div class="confirm bg-gray d-flex">
-          <form action="#" class="confirm__form d-flex shadow">
-            <h2 class="confirm__title bold">Подтверждение регистрации</h2>
-            <p class="confirm__text fs-16">На указанный Вами адрес электронной почты было направлено письмо с кодом
-              для подтверждения регистрации, введите код из письма в поле ниже. </p>
-            <input type="text" class="confirm__input input-style" placeholder="Код" required>
-            <button class="confirm__btn fs-16 bold">Подтвердить</button>
-            <p class="confirm__subtext">Код не пришел? <a href="#" class="confirm__link">Отправить повторно</a></p>
+        <div class="authorize bg-gray d-flex">
+          <form action="#" class="authorize__form d-flex shadow">
+            <h2 class="authorize__title bold fs-20">Авторизация</h2>
+            <input type="text" class="authorize__input input-style" placeholder="Логин" required>
+            <input type="password" class="authorize__input input-style" placeholder="Пароль" required>
+            <button class="authorize__btn bold fs-16" type="submit">Войти</button>
+            <a href="#" class="authorize__link fs-16">Забыли пароль?</a>
+            <p class="authorize__text">Нет аккаунта? <a href="#"
+                class="authorize__link authorize__link--registr">Зарегистрироваться</a> </p>
           </form>
         </div>
       </section>
