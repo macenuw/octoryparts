@@ -1,0 +1,63 @@
+.card-info {
+  max-width: 285px;
+  margin-right: 35px;
+
+  &__slider-inner {
+    max-width: 275px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+
+  & .slider {
+    .slick-arrow {
+      border: none;
+      background-color: transparent;
+      top: calc(50% - 10px);
+      position: absolute;
+    }
+
+    .slick-prev {
+      left: -20px;
+      font-size: 0px;
+      width: 9px;
+      height: 20px;
+      background-image: url('../images/prev.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .slick-next {
+      right: -20px;
+      font-size: 0px;
+      width: 9px;
+      height: 20px;
+      background-image: url('../images/next.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__text {
+    padding: 18px 21px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  &__title {
+    display: block;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  &__number {
+    display: block;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  &__version {
+    display: block;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+}

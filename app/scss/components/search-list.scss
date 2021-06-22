@@ -1,0 +1,23 @@
+.search-result {
+  height: 379px;
+  overflow-y: auto;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 0 10px;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__img-inner {
+    max-width: 140px;
+    max-height: 64px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
