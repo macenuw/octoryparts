@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="header d-flex">
+    <a href="#" class="header__logo logo">
+      <img class="logo__img" src="./images/logo.png" alt="logo OctoryParts" />
+    </a>
+    <div class="header__btns d-flex">
+      <button class="header__btn header__btn--cart" type="button">
+        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.27507 8.88007C1.93898 8.87972 1.61637 9.01335 1.37755 9.25184C1.13872 9.49033 1.00304 9.81434 1.00008 10.1533C0.998713 10.2708 1.01558 10.3877 1.05008 10.4999L4.28132 21.9904C4.43108 22.5271 4.75114 22.9995 5.1925 23.3353C5.63385 23.6712 6.17218 23.8518 6.72506 23.8497H21.275C21.829 23.8502 22.3681 23.6692 22.8111 23.3338C23.2541 22.9984 23.5771 22.5269 23.7313 21.9904L26.9625 10.4999L27 10.1533C26.997 9.81434 26.8614 9.49033 26.6225 9.25184C26.3837 9.01335 26.0611 8.87972 25.725 8.88007H2.27507ZM14.3575 18.9693C13.8381 18.9667 13.331 18.809 12.9003 18.516C12.4697 18.2231 12.1347 17.808 11.9377 17.3232C11.7407 16.8385 11.6905 16.3057 11.7934 15.7922C11.8964 15.2787 12.1478 14.8075 12.5161 14.438C12.8843 14.0685 13.3528 13.8172 13.8625 13.716C14.3722 13.6147 14.9002 13.668 15.3799 13.8691C15.8596 14.0702 16.2695 14.41 16.5578 14.8458C16.8461 15.2816 17 15.7937 17 16.3176C16.9967 17.0222 16.7168 17.6967 16.2216 18.1936C15.7264 18.6906 15.0562 18.9695 14.3575 18.9693Z"
+            stroke="black" stroke-linejoin="round" />
+          <path d="M8.0907 8.87879L13.9998 1L19.9089 8.87879" stroke="black" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="header__btn header__btn--sign-in button bold" type="button">
+        Регистрация
+      </button>
+      <button class="header__btn header__btn--join button bold" type="button">
+        Авторизация
+      </button>
+      <button class="header__btn header__btn--quit button bold" type="button">
+        Выход
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="register">
+      <div class="container ">
+        <div class="register__wrapper">
+           <h1 class="register__title">Регистрация</h1>
+           <form class="register__form" action="#">
+            <div class="register__form-top__btn-inner d-flex space-between">
+              <input class="register__form-top__btn-buyer" type="radio">
+              <input class="register__form-top__btn-seller" type="radio">
+            </div>
+            <input class="register__form-input__name input-style" 
+            type="text" placeholder="Имя">
+            <input class="register__form-input__last-name input-style" 
+            type="text" placeholder="Фамилия">
+            <input class="register__form-input__name-org input-style" 
+            type="text" placeholder="Название вашей организации">
+            <div class="register__form-min__input__inner d-flex space-between">
+              <input class="register__form-input__left input-style" 
+            type="text" placeholder="ИНН">
+            <input class="register__form-input__right input-style" 
+            type="text" placeholder="КПП">
+            </div>
+            <textarea class="register__form-textarea input-style" rows="3" placeholder="Юридический адрес"></textarea>
+            <input class="register__form-input__name input-style" 
+            type="number" placeholder="Телефон">
+            <input class="register__form-input__last-name input-style" 
+            type="text" placeholder="Адрес электронной почты">
+            <input class="register__form-input__name-org input-style" 
+            type="password" placeholder="Придумайте пароль">
+            <button  class="register__form-btn button " type="submit">Зарегистрироваться</button>
+            <p class="register__form-bottom">
+              У вас уже есть аккаунт?  <a href="#" class="register__form-bottom__link">
+                Войти
+            </a> 
+            </p>
+           </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
