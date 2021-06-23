@@ -1,6 +1,6 @@
 .car-card {
   width: 100%;
-  padding: 42px 55px 36px;
+  padding: 42px 25px 36px;
   min-height: calc(800px - 64px);
 
   &__top {
@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 535px;
   }
 
   &__list-inner {
@@ -57,25 +58,41 @@
 
   &__item {
     padding: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 10px;
+    align-items: center;
 
     &:not(:first-child) {
-      border-top: 1px solid #828282;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
 
   &__item-name {
-    margin-right: 35px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   &__item-number {
-    margin-right: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
   }
 
   &__item-version {
-    margin-right: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
   }
 
   &__item-amount {
-    margin-right: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__item-link {
+    color: #2F80ED;
+    font-size: 13px;
+    text-align: center;
   }
 }

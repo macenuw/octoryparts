@@ -1,1 +1,39 @@
-.page-list{}
+.page-list {
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+
+  &--first {
+    .page-list__item--prev {
+      display: none;
+    }
+  }
+
+  &--last {
+    .page-list__item--next {
+      display: none;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: $btn-color;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--active {
+      border-color: $btn-color;
+    }
+  }
+
+  &__link {
+    color: $btn-color;
+    padding: 0 3px;
+  }
+}
