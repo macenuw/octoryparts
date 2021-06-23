@@ -1,6 +1,6 @@
 .car-card {
   width: 100%;
-  padding: 42px 25px 36px;
+  padding: 42px 10px 36px 25px;
   min-height: calc(800px - 64px);
 
   &__top {
@@ -59,7 +59,7 @@
   &__item {
     padding: 5px 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr) 10px;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 
     &:not(:first-child) {
@@ -70,6 +70,7 @@
   &__item-name {
     font-size: 18px;
     line-height: 24px;
+    white-space: nowrap;
   }
 
   &__item-number {

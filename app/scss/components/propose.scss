@@ -1,0 +1,88 @@
+.propose {
+  &__top {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 13px;
+    color: #C0C0C0;
+  }
+
+  &__list {
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+
+    &:first-child {
+      background-color: rgba(26, 64, 35, 0.47);
+      font-size: 13px;
+
+      & span {
+        padding: 7px;
+      }
+    }
+  }
+
+  &__name {
+    padding: 7px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__number {
+    padding: 7px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  &__date {
+    padding: 7px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__provider {
+    padding: 7px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 13px;
+  }
+
+  &__added {
+    padding: 7px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+  }
+}
