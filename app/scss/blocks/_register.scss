@@ -1,51 +1,98 @@
 .register {
     background-color: $bg-gray;
     min-height: 800px;
+    padding-top: 25px;
 
     &__wrapper {
-        padding-top: 25px;
+        padding: 15px 0 25px;
         max-width: 385px;
         margin: 0 auto;
         background-color: #fff;
     }
     &__title {
         text-align: center;
+        margin-bottom: 20px;
     }
-    &__form{
-        padding: 50px;
+    &__form {
+        padding: 0 50px;
         max-width: 395px;
         width: 100%;
-        margin: 0 auto;  
+        margin: 0 auto;
     }
-    &__form-top__btn-inner{
-       margin-bottom: 12px;
-      
+    &__form-top__btn-inner {
+        margin-bottom: 12px;
+    
     }
-    &__form-min__input__inner{
-        input{
-           max-width: 135px ; 
-           border: 1px solid #000;
+    &__btn--buyer,
+    &__btn--seller {
+        line-height: 24px;
+        margin-right: 10px;
+        font-family: "Roboto";
+        font-weight: 700;
+        max-width: 100%;
+        input {
+            display: none;
+            &:checked + label {
+                background: #1a4023;
+                color: #f0f4f2;
+            }
+        }
+        label {
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            width: 135px;
+            padding: 10px 0;
+            max-width: 100%;
+            border: 1px solid $btn-color;
+            border-radius: 5px;
+            user-select: none;
+            color: $btn-color;
         }
     }
-    &__form-textarea{
+    &__form-min__input__inner {
+        input {
+            max-width: 135px;
+            width: 100%;
+            border: 1px solid #000;
+            
+        }
+    }
+    &__form-textarea {
         border-radius: 4px;
         resize: none;
         border: 1px solid #000;
     }
-    &__form-btn{
+    &__form-btn {
         padding: 17px 48px;
-        display: inline-block;
-        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+        max-width: 236px;
+        width: 100%;
+        background-color: #1a4023;
+        margin: 0 auto 10px;
+        color: #fff;
+        cursor: pointer;
     }
-    &__form-bottom__link{
+    &__form-bottom__link {
         text-decoration: underline;
         text-align: center;
         display: inline;
     }
-    &__form-bottom{
+    &__form-bottom {
         color: #000;
-        a{
+        text-align: center;
+        a {
             color: inherit;
         }
+    }
+}
+
+@media(max-widht:420px){
+    .register__form-top__btn-inner {
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+    
     }
 }

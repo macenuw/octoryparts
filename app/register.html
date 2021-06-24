@@ -40,9 +40,16 @@
            <h1 class="register__title">Регистрация</h1>
            <form class="register__form" action="#">
             <div class="register__form-top__btn-inner d-flex space-between">
-              <input class="register__form-top__btn-buyer" type="radio">
-              <input class="register__form-top__btn-seller" type="radio">
+              <div class="register__btn--buyer fs-16">
+                <input class="register__btn-input" id="tab-1" type="radio" name="radio" value="1" checked>
+                <label for="tab-1">Покупатель</label>
+              </div>
+              <div class="register__btn--seller fs-16">
+                <input class="register__btn-input" id="tab-2" type="radio" name="radio" value="2">
+                <label for="tab-2">Продавец</label>
+              </div>
             </div>
+            <div class="register__form-inner buyer" id="conent-buyer">
             <input class="register__form-input__name input-style" 
             type="text" placeholder="Имя">
             <input class="register__form-input__last-name input-style" 
@@ -57,23 +64,23 @@
             </div>
             <textarea class="register__form-textarea input-style" rows="3" placeholder="Юридический адрес"></textarea>
             <input class="register__form-input__name input-style" 
-            type="number" placeholder="Телефон">
+            type="text" placeholder="Телефон">
             <input class="register__form-input__last-name input-style" 
             type="text" placeholder="Адрес электронной почты">
             <input class="register__form-input__name-org input-style" 
             type="password" placeholder="Придумайте пароль">
             <button  class="register__form-btn button " type="submit">Зарегистрироваться</button>
             <p class="register__form-bottom">
-              У вас уже есть аккаунт?  <a href="#" class="register__form-bottom__link">
+              У вас уже есть аккаунт?  <a class="register__form-bottom__link" href="#" >
                 Войти
             </a> 
             </p>
+          </div>
            </form>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
   <script src="js/main.min.js"></script>
 </body>
 
