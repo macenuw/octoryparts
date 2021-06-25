@@ -9,20 +9,24 @@
         margin: 0 auto;
         background-color: #fff;
     }
+
     &__title {
         text-align: center;
         margin-bottom: 20px;
     }
+
     &__form {
         padding: 0 50px;
         max-width: 395px;
         width: 100%;
         margin: 0 auto;
     }
+
     &__form-top__btn-inner {
         margin-bottom: 12px;
-    
+
     }
+
     &__btn--buyer,
     &__btn--seller {
         line-height: 24px;
@@ -30,13 +34,16 @@
         font-family: "Roboto";
         font-weight: 700;
         max-width: 100%;
+
         input {
             display: none;
-            &:checked + label {
+
+            &:checked+label {
                 background: #1a4023;
                 color: #f0f4f2;
             }
         }
+
         label {
             display: inline-block;
             cursor: pointer;
@@ -50,19 +57,26 @@
             color: $btn-color;
         }
     }
+
+    &__btn--seller {
+        margin-right: 0;
+    }
+
     &__form-min__input__inner {
         input {
             max-width: 135px;
             width: 100%;
             border: 1px solid #000;
-            
+
         }
     }
+
     &__form-textarea {
         border-radius: 4px;
         resize: none;
         border: 1px solid #000;
     }
+
     &__form-btn {
         padding: 17px 48px;
         display: block;
@@ -74,18 +88,19 @@
         color: #fff;
         cursor: pointer;
     }
+
     &__form-bottom__link {
         text-decoration: underline;
         text-align: center;
         display: inline;
     }
+
     &__form-bottom {
         color: #000;
         text-align: center;
+
         a {
             color: inherit;
         }
     }
 }
-
-
