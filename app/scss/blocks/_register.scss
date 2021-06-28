@@ -1,6 +1,6 @@
 .register {
     background-color: $bg-gray;
-    min-height: 800px;
+    min-height: calc(100vh - 64px);
     padding-top: 25px;
 
     &__wrapper {

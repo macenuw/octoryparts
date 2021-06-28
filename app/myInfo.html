@@ -112,59 +112,105 @@
             </button>
           </div>
         </header>
-        <div class="home border">
-          <h2 class="home__title fs-20 bold">Главная</h2>
-          <form class="home__form" action="#">
-            <div class="home__select-inner d-flex">
-              <select class="home__select home__select--mb-36 home__select--brand shadow" name="brand">
-                <option value="" selected disabled hidden>
-                  Выберите марку
-                </option>
-                <option value="sunward">SUNWARD</option>
-                <option value="commins">COMMINS</option>
-                <option value="volvo">VOLVO</option>
-              </select>
-              <select class="home__select home__select--mb-36 home__select--model shadow" name="model">
-                <option value="" selected disabled hidden>Выберите модель</option>
-                <option value="something">something</option>
-                <option value="something">something</option>
-                <option value="something">something</option>
-              </select>
+        <div class="my-info border">
+          <div class="my-info__inner">
+            <div class="my-info__profile">
+              <div class="my-info__img"></div>
+              <div class="my-info__text">
+                <h2 class="my-info__name">Дмитрий Голубев</h2>
+                <div class="my-info__tel-inner">
+                  <span class="my-info__tel">+7(995)095-05-05</span>
+                  <button class="my-info__tel-btn">(изм.)</button>
+                </div>
+                <div class="my-info__mail-inner">
+                  <span class="my-info__mail">dmitry_mikhailovich@gmail.com</span>
+                  <button class="my-info__mail-btn">(изм.)</button>
+                </div>
+                <button class="my-info__foto-btn" type="button">Изменить фото</button>
+              </div>
+              <button class="my-info__quit">Выйти</button>
             </div>
-            <div class="search-num__list search-num__list--mb-36 search-result shadow">
-              <h3 class="search-result__title">Результаты поиска</h3>
-              <div class="search-result__card">
-                <div class="search-result__img-inner">
-                  <img src="./images/model.jpg" alt="model" class="search-result__img">
-                </div>
-                <span class="search-result__brand">SUMMINS</span>
-                <span class="search-result__num">00001</span>
-                <span class="search-result__price">500 руб.</span>
-              </div>
-              <div class="search-result__card">
-                <div class="search-result__img-inner">
-                  <img src="./images/model.jpg" alt="model" class="search-result__img">
-                </div>
-                <span class="search-result__brand">SUMMINS</span>
-                <span class="search-result__num">00001</span>
-                <span class="search-result__price">500 руб.</span>
-              </div>
-              <div class="search-result__card">
-                <div class="search-result__img-inner">
-                  <img src="./images/model.jpg" alt="model" class="search-result__img">
-                </div>
-                <span class="search-result__brand">SUMMINS</span>
-                <span class="search-result__num">00001</span>
-                <span class="search-result__price">500 руб.</span>
-              </div>
+            <div class="my-info__company-inner company">
+
             </div>
-            <button class="home__btn fs-19 bold" type="submit">Подобрать</button>
-          </form>
+          </div>
         </div>
       </section>
     </div>
   </main>
-  <footer class="footer"></footer>
+  <div class="all-modal">
+    <div class="modal" id="modalAuthMyOrder">
+      <div class="modal__inner">
+        <button class="modal__btn-close" onclick="openModalAuthMyOrder()"></button>
+        <form action="#" class="authorize__form d-flex shadow">
+          <h2 class="authorize__title bold fs-20">Авторизация</h2>
+          <p class="modal__text">Для перехода к “Мои заказы” необходимо авторизоваться.</p>
+          <input type="text" class="authorize__input input-style" placeholder="Логин" required>
+          <input type="password" class="authorize__input input-style" placeholder="Пароль" required>
+          <button class="authorize__btn bold fs-16" type="submit">Войти</button>
+          <a href="#" class="authorize__link fs-16">Забыли пароль?</a>
+          <p class="authorize__text">Нет аккаунта? <a href="#"
+              class="authorize__link authorize__link--registr">Зарегистрироваться</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modalAuthMyInfo">
+      <div class="modal__inner">
+        <button class="modal__btn-close" onclick="openModalAuthMyInfo()"></button>
+        <form action="#" class="authorize__form d-flex shadow">
+          <h2 class="authorize__title bold fs-20">Авторизация</h2>
+          <p class="modal__text">Для перехода к “Мои данные” необходимо авторизоваться.</p>
+          <input type="text" class="authorize__input input-style" placeholder="Логин" required>
+          <input type="password" class="authorize__input input-style" placeholder="Пароль" required>
+          <button class="authorize__btn bold fs-16" type="submit">Войти</button>
+          <a href="#" class="authorize__link fs-16">Забыли пароль?</a>
+          <p class="authorize__text">Нет аккаунта? <a href="#"
+              class="authorize__link authorize__link--registr">Зарегистрироваться</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modalAuthMyCto">
+      <div class="modal__inner">
+        <button class="modal__btn-close" onclick="openModalAuthMyCto()"></button>
+        <form action="#" class="authorize__form d-flex shadow">
+          <h2 class="authorize__title bold fs-20">Авторизация</h2>
+          <p class="modal__text">Для перехода к “Мое СТО” необходимо авторизоваться.</p>
+          <input type="text" class="authorize__input input-style" placeholder="Логин" required>
+          <input type="password" class="authorize__input input-style" placeholder="Пароль" required>
+          <button class="authorize__btn bold fs-16" type="submit">Войти</button>
+          <a href="#" class="authorize__link fs-16">Забыли пароль?</a>
+          <p class="authorize__text">Нет аккаунта? <a href="#"
+              class="authorize__link authorize__link--registr">Зарегистрироваться</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modalAuthMyPark">
+      <div class="modal__inner">
+        <button class="modal__btn-close" onclick="openModalAuthMyPark()"></button>
+        <form action="#" class="authorize__form d-flex shadow">
+          <h2 class="authorize__title bold fs-20">Авторизация</h2>
+          <p class="modal__text">Для перехода к “Мой парк техники” необходимо авторизоваться.</p>
+          <input type="text" class="authorize__input input-style" placeholder="Логин" required>
+          <input type="password" class="authorize__input input-style" placeholder="Пароль" required>
+          <button class="authorize__btn bold fs-16" type="submit">Войти</button>
+          <a href="#" class="authorize__link fs-16">Забыли пароль?</a>
+          <p class="authorize__text">Нет аккаунта? <a href="#"
+              class="authorize__link authorize__link--registr">Зарегистрироваться</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="choiceWhoAreYou">
+      <div class="modal__inner modal__inner--choice">
+        <button class="modal__btn-close" onclick="openModalChoiceYou()"></button>
+        <div class="choice">
+          <h3 class="choice__title">Регистрация!</h3>
+          <p class="choice__text">Выберите в качестве кого вы хотите зарегистрироваться.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  </footer>
   <script src="js/main.min.js"></script>
 </body>
 

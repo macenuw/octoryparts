@@ -1,6 +1,6 @@
 .home {
   padding: 43px 55px;
-  height: calc(800px - 64px);
+  height: calc(100vh - 64px);
 
   &__title {
     line-height: 24px;
@@ -8,13 +8,17 @@
   }
 
   &__select {
-    max-width: 406px;
+    max-width: 50%;
     width: 100%;
     margin-bottom: 160px;
 
     &--brand {
       margin-right: 58px;
     }
+  }
+
+  &__select--mb-36 {
+    margin-bottom: 36px;
   }
 
   .jq-selectbox {
@@ -37,7 +41,7 @@
 
     &__trigger-arrow {
       border: none;
-      background-image: url('../../images/arrow-down-black.svg');
+      background-image: url('../images/arrow-down-black.svg');
       background-position: center;
       background-repeat: no-repeat;
       height: 9px;

@@ -1,8 +1,8 @@
 .menu {
   background-color: $btn-color;
-  max-width: 256px;
+  width: 290px;
   padding-top: 90px;
-  min-height: 800px;
+  min-height: 100vh;
 
   &__item {
     width: 100%;
@@ -13,8 +13,9 @@
         display: block;
 
         &__link {
-          padding: 19px 0 19px 69px;
-          width: 256px;
+          padding: 19px 0 19px;
+          text-align: center;
+          width: 100%;
           font-size: 18px;
         }
       }
@@ -29,9 +30,10 @@
   &__link {
     display: block;
     color: white;
-    padding: 19px 0 19px 51px;
-    width: 256px;
+    padding: 19px 0 19px;
+    width: 100%;
     transition: .3s;
+    text-align: center;
 
     &:hover {
       border-left: 7px solid white;
@@ -42,7 +44,7 @@
       background-image: url('../images/arrow-down.svg');
       background-repeat: no-repeat;
       background-position-y: center;
-      background-position-x: 227px;
+      background-position-x: 240px;
     }
   }
 }

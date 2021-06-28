@@ -1,0 +1,161 @@
+.history {
+  padding: 43px 55px;
+  min-height: calc(100vh - 64px);
+
+  &__inner {
+    background-color: white;
+    padding: 29px 37px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    width: 100%;
+  }
+
+  &__text-text {
+    max-width: 453px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 23px;
+  }
+
+  &__link {
+    color: #000000;
+    text-decoration: underline;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__text-btn {
+    display: block;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    color: #F0F4F2;
+    background-color: $btn-color;
+    border-radius: 5px;
+    padding: 13px 16px;
+    max-width: 195px;
+    margin-bottom: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      color: $btn-color;
+      background-color: transparent;
+      border-color: $btn-color;
+    }
+  }
+
+  &__order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__order-total {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+
+    &--price {
+      font-weight: normal;
+    }
+  }
+
+  &__address {
+    padding: 29px 0;
+  }
+
+  &__address-inner {
+    margin-bottom: 29px;
+  }
+
+  &__address-profile {
+    margin-right: 54px;
+  }
+
+  &__address-profile,
+  &__address-cto {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__address-name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 7px;
+  }
+
+  &__address-shadow {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: -3px;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &__address-shadow.active,
+  &__address-shadow.active {
+    background-image: url('../images/check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  &__address-area {
+    position: relative;
+    margin-bottom: 22px;
+    display: block;
+
+    & textarea {
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &__area-span {
+    position: absolute;
+    top: -6px;
+    left: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    background-color: white;
+    padding: 0 5px;
+  }
+
+  &__pay-btn {
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #F0F4F2;
+    border: 2px solid $btn-color;
+    background-color: $btn-color;
+    border-radius: 5px;
+    padding: 9px 22px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: white;
+      color: $btn-color;
+    }
+  }
+}

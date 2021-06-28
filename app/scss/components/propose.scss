@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
+    padding-top: 16px;
   }
 
   &__btn {
@@ -10,6 +11,7 @@
     background-color: transparent;
     font-size: 13px;
     color: #C0C0C0;
+    cursor: pointer;
   }
 
   &__list {

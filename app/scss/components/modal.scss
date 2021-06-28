@@ -1,0 +1,82 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &--choice {
+      max-width: 385px;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    background-image: url('../images/cancel.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  & .authorize__form {
+    max-width: 600px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+}
+
+.choice {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 5px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 24px;
+  }
+}
