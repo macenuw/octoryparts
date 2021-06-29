@@ -34,19 +34,28 @@ function openModalAuthMyOrder() {
   var modalAuthMyOrder = document.getElementById("modalAuthMyOrder");
   modalAuthMyOrder.classList.toggle("active")
 }
+
 function openModalAuthMyInfo() {
   var modalAuthMyInfo = document.getElementById("modalAuthMyInfo");
   modalAuthMyInfo.classList.toggle("active")
 }
+
 function openModalAuthMyCto() {
   var modalAuthMyCto = document.getElementById("modalAuthMyCto");
   modalAuthMyCto.classList.toggle("active")
 }
+
 function openModalAuthMyPark() {
   var modalAuthMyPark = document.getElementById("modalAuthMyPark");
   modalAuthMyPark.classList.toggle("active")
 }
+
 function openModalChoiceYou() {
   var modalChoiceYou = document.getElementById("choiceWhoAreYou");
   modalChoiceYou.classList.toggle("active")
+}
+
+function openModalAddCompany() {
+  var AddCompany = document.getElementById("AddCompany");
+  AddCompany.classList.toggle("active")
 }

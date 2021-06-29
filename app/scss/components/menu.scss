@@ -1,4 +1,6 @@
 .menu {
+  position: fixed;
+  z-index: 999;
   background-color: $btn-color;
   width: 290px;
   padding-top: 90px;
