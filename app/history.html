@@ -192,6 +192,7 @@
           <button onclick="openModalAuthMyCto()">вызов авторизации мок СТО</button>
           <button onclick="openModalAuthMyPark()">вызов авторизации мой парк техники</button>
           <button onclick="openModalChoiceYou()">выберите в качестве кого</button>
+          <button onclick="openModalAddCompany()">Добавить организацию</button>
         </div>
       </section>
     </div>
@@ -264,6 +265,21 @@
           <h3 class="choice__title">Регистрация!</h3>
           <p class="choice__text">Выберите в качестве кого вы хотите зарегистрироваться.</p>
         </div>
+      </div>
+    </div>
+    <div class="modal active" id="AddCompany">
+      <div class="modal__inner add-company">
+        <button class="modal__btn-close" onclick="openModalAddCompany()"></button>
+        <h3 class="choice__title">Добавить организацию</h3>
+        <form action="#" class="add-company__form">
+          <input type="text" class="add-conpany__name input-style" placeholder="Название вашей организации">
+          <div class="add-company__inner">
+            <input type="text" class="add-company__inn input-style" placeholder="ИНН">
+            <input type="text" class="add-company__kpp input-style" placeholder="КПП">
+          </div>
+          <textarea class="add-company__address input-style" name="company address" id="" cols="3" rows="4" placeholder="Юридический адрес"></textarea>
+          <button class="add-company__btn" type="submit">Добавить</button>
+        </form>
       </div>
     </div>
   </div>
