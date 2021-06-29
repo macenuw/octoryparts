@@ -1,0 +1,141 @@
+.my-orders {
+    padding: 43px 100px 43px 60px;
+    height: calc(100vh - 64px);
+
+    &__title {
+        line-height: 24px;
+        margin-bottom: 38px;
+    }
+    &__form-inner {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    &__select {
+        width: 239px;
+        max-width: 100%;
+        option {
+            width: 239px;
+            max-width: 100%;
+        }
+    }
+    &__num {
+        padding-right: 43px;
+        position: relative;
+
+        input {
+            max-width: 100%;
+            width: 176px;
+            display: block;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            padding: 8px 28px;
+            
+
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("/images/calendar-icon.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 33px;
+            height: 36px;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .jq-selectbox {
+        &__select {
+            background: #ffffff;
+            padding: 17px 14px;
+            font-family: "Roboto", sans-serif;
+            border: 2px solid black;
+            box-shadow: transparent;
+        }
+
+        &__select-text {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: -11px;
+        }
+        &__trigger-arrow {
+            border: none;
+            background-image: url("../images/arrow-down-black.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 9px;
+            width: 15px;
+            top: 11px;
+            right: 11px;
+        }
+        &__dropdown {
+            width: 100%;
+        }
+        &__trigger {
+            border: none;
+        }
+        &__dropdown li {
+            padding: 8px 14px 7px;
+            font-size: 16px;
+            line-height: 1.5;
+
+            &.disabled {
+                display: none;
+            }
+
+            &:not(:nth-child(2)) {
+                border-top: 1px solid black;
+            }
+
+            &:hover {
+                background-color: $hover-color;
+                color: black;
+            }
+           
+        }
+    }
+    .file-btn  {
+        &__label{
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 24px;
+            color: #fff;
+            padding: 0 29px;
+            width: 200px;
+            max-width: 100%;
+            margin: auto;
+            display: block;
+            border-radius: 5px;
+            background-color: $btn-color;
+            margin-top: -10px;
+            &:hover {
+                border: 2px solid $btn-color;
+                color: $btn-color;
+                border-color: $btn-color;
+                background-color: transparent;
+            }
+        }
+        &__input {
+           width: 0.1px;
+           height: 0.1px;
+           opacity: 0;
+           overflow: hidden;
+           position: absolute;
+           z-index: -1;
+           & + .js-labelFile {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              padding: 12px 29px;
+              cursor: pointer;
+          }
+       } 
+    }
+    
+}
+
