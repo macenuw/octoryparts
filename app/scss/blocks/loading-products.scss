@@ -9,6 +9,9 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        input{
+            display: block;
+        }
     }
     &__inner-content {
         max-width: 603px;
@@ -34,6 +37,8 @@
        color: rgba(0, 0, 0, 0.85);
    }
    &__btn{
+      margin: 0 auto;
+       display: block;
        color: #fff;
        padding: 7px 15px;
        background-color: $btn-color;
@@ -44,43 +49,16 @@
            color: $btn-color;
            background-color: #fff;
        }
-   }
-
-    .file-btn {
-        &__label {
-            font-family: "Roboto";
-            font-weight: 700;
-            font-size: 19px;
-            line-height: 24px;
-            color: #fff;
-            padding: 0 29px;
-            width: 200px;
-            max-width: 100%;
-            margin: auto;
-            display: block;
-            border-radius: 5px;
-            background-color: $btn-color;
-            &:hover {
-                border: 2px solid $btn-color;
-                color: $btn-color;
-                border-color: $btn-color;
-                background-color: transparent;
-            }
-        }
-        &__input {
-            width: 0.1px;
-            height: 0.1px;
-            opacity: 0;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
-            & + .js-labelFile {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                padding: 9.5px 29px;
-                cursor: pointer;
-            }
-        }
     }
+    &__btn--undo{
+        border: 1px solid $btn-color;
+           color: $btn-color;
+           background-color: #fff;
+           &:hover{
+            background-color: $btn-color;
+            color: #fff;
+           }
+    }
+
+   
 }
