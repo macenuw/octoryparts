@@ -1,0 +1,123 @@
+.my-info {
+  min-height: calc(100vh - 64px);
+  padding: 30px 25px 30px 55px;
+
+  &__inner {}
+
+  &__profile {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 220px;
+    width: 190px;
+    margin-right: 38px;
+
+    & img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__tel-inner,
+  &__mail-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mail-inner {
+    margin-bottom: 14px;
+  }
+
+  &__tel {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__mail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  &__foto-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid $btn-color;
+    transition: 0.3s;
+    padding: 8px 14px;
+    border-radius: 5px;
+    max-width: 154px;
+
+    &:hover {
+      background-color: $btn-color;
+      color: white;
+    }
+  }
+
+  &__company-inner {
+    border-radius: 5px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+  }
+
+  &__added {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A4023;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    border-color: $btn-color;
+    transition: .3s;
+
+    &:hover {
+      background-color: $btn-color;
+      color: #F0F4F2;
+    }
+  }
+}
