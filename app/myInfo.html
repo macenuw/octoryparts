@@ -133,7 +133,7 @@
             </div>
             <div class="my-info__company-inner company shadow">
               <h3 class="company__title">Мои организации</h3>
-              <ul class="company__row">
+              <ul class="company__row company__row--save">
                 <li class="company__col">
                   <span class="company__name">Название организации</span>
                   <span class="company__value company__value--name"
@@ -154,14 +154,14 @@
                 </li>
                 <li class="company__btns">
                   <button class="company__btn company__btn--change">Изменить</button>
-                  <button class="company__btn company__btn--delete">Удалить</button>
+                  <button class="company__btn company__btn--save">Сохранить</button>
+                  <button class="company__btn company__btn--cancel">Отменить</button>
                 </li>
               </ul>
-              <ul class="company__row">
+              <ul class="company__row company__row--change">
                 <li class="company__col">
                   <span class="company__name">Название организации</span>
-                  <span class="company__value company__value--name"
-                    title="Организиз"></span>
+                  <span class="company__value company__value--name" title="Организиз"></span>
                 </li>
                 <li class="company__col">
                   <span class="company__name">КПП</span>
@@ -173,18 +173,18 @@
                 </li>
                 <li class="company__col">
                   <span class="company__name">Фактический адрес</span>
-                  <span class="company__value company__value--address"
-                    title="Казань,ул.Баумана"></span>
+                  <span class="company__value company__value--address" title="Казань,ул.Баумана"></span>
                 </li>
                 <li class="company__btns">
                   <button class="company__btn company__btn--change">Изменить</button>
-                  <button class="company__btn company__btn--delete">Удалить</button>
+                  <button class="company__btn company__btn--save">Сохранить</button>
+                  <button class="company__btn company__btn--cancel">Отменить</button>
                 </li>
               </ul>
             </div>
-            <div class="my-info__footer">
+            <!-- <div class="my-info__footer">
               <button class="my-info__added" onclick="openModalAddCompany()">Добавить организацию</button>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -270,7 +270,8 @@
             <input type="text" class="add-company__inn input-style" placeholder="ИНН">
             <input type="text" class="add-company__kpp input-style" placeholder="КПП">
           </div>
-          <textarea class="add-company__address input-style" name="company address" id="" cols="3" rows="4" placeholder="Юридический адрес"></textarea>
+          <textarea class="add-company__address input-style" name="company address" id="" cols="3" rows="4"
+            placeholder="Юридический адрес"></textarea>
           <button class="add-company__btn" type="submit">Добавить</button>
         </form>
       </div>

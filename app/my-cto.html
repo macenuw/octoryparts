@@ -112,75 +112,39 @@
             </button>
           </div>
         </header>
-        <div class="my-info border">
-          <div class="my-info__inner">
-            <div class="my-info__profile">
-              <div class="my-info__img">
-                <img src="./images/profile-img.png" alt="profile images">
-              </div>
-              <div class="my-info__text">
-                <h2 class="my-info__name">Дмитрий Голубев</h2>
-                <div class="my-info__tel-inner">
-                  <span class="my-info__tel">+7(995)095-05-05</span>
-                  <button class="my-info__btn my-info__btn--tel">(изм.)</button>
+        <div class="my-cto border">
+          <h2 class="my-cto__title">Мое СТО</h2>
+          <div class="my-cto__content">
+            <div class="my-cto__info">
+              <div class="my-cto__inner my-cto__inner--map">
+                <address class="my-cto__text">
+                  <h3 class="my-cto__name">ООО “ДСТС”</h3>
+                  <span class="my-cto__row my-cto__inn">ИНН:<span class="my-cto__inn--number">7731347089</span></span>
+                  <span class="my-cto__row my-cto__kpp">КПП:<span class="my-cto__kpp--number">9940280405</span></span>
+                  <span class="my-cto__row my-cto__address">Адрес:<span class="my-cto__address--name"
+                      title="Санкт-Петербург,Грибоедова,6">Санкт-Петербург,Грибоедова,6</span></span>
+                  <span class="my-cto__row my-cto__tel">Тел.:<span
+                      class="my-cto__tel--number">+7(995)095-05-05</span></span>
+                  <span class="my-cto__row my-cto__mail">Электронная почта:<span
+                      class="my-cto__mail--address">dmitry@gmail.com</span></span>
+                </address>
+                <div class="my-cto__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.85462739202!2d30.57170706642027!3d46.45988649163949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1625079716145!5m2!1sru!2sua"
+                    width="360" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="my-info__mail-inner">
-                  <span class="my-info__mail">dmitry_mikhailovich@gmail.com</span>
-                  <button class="my-info__btn my-info__btn--mail">(изм.)</button>
-                </div>
-                <button class="my-info__foto-btn" type="button">Изменить фото</button>
               </div>
+              <button class="my-cto__btn my-cto__btn--info">Изменить</button>
             </div>
-            <div class="my-info__company-inner company shadow">
-              <h3 class="company__title">Мои организации</h3>
-              <ul class="company__row">
-                <li class="company__col">
-                  <span class="company__name">Название организации</span>
-                  <span class="company__value company__value--name"
-                    title="Организиз">ОрганизизОрганизизОрганизизОрганизиз</span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">КПП</span>
-                  <span class="company__value company__value--kpp">773101001</span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">ИНН</span>
-                  <span class="company__value company__value--inn">7731347089</span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">Фактический адрес</span>
-                  <span class="company__value company__value--address"
-                    title="Казань,ул.Баумана">Казань,ул.Баумана</span>
-                </li>
-                <li class="company__btns">
-                  <button class="company__btn company__btn--change">Изменить</button>
-                  <button class="company__btn company__btn--delete">Удалить</button>
-                </li>
-              </ul>
-              <ul class="company__row">
-                <li class="company__col">
-                  <span class="company__name">Название организации</span>
-                  <span class="company__value company__value--name"
-                    title="Организиз"></span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">КПП</span>
-                  <span class="company__value company__value--kpp"></span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">ИНН</span>
-                  <span class="company__value company__value--inn"></span>
-                </li>
-                <li class="company__col">
-                  <span class="company__name">Фактический адрес</span>
-                  <span class="company__value company__value--address"
-                    title="Казань,ул.Баумана"></span>
-                </li>
-                <li class="company__btns">
-                  <button class="company__btn company__btn--change">Изменить</button>
-                  <button class="company__btn company__btn--delete">Удалить</button>
-                </li>
-              </ul>
+            <div class="my-cto__payment">
+              <div class="my-cto__inner">
+                <h3 class="my-cto__subtitle">Платежные реквизиты</h3>
+                <span class="my-cto__row my-cto__bank">Банк: <span class="my-cto__bank-name">Альфа Банк</span> </span>
+                <span class="my-cto__row my-cto__wallet">Рассчетный счет:<span
+                    class="my-cto__wallet--number">12934054903392</span></span>
+                <span class="my-cto__row my-cto__bik">БИК:<span class="my-cto__bik--number">00394994</span></span>
+              </div>
+              <button class="my-cto__btn my-cto__btn--payment">Изменить</button>
             </div>
           </div>
         </div>

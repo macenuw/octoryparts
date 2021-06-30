@@ -2,6 +2,7 @@
   background-color: white;
   padding: 22px 24px;
 
+
   &__title {
     margin-bottom: 30px;
     font-weight: bold;
@@ -12,9 +13,24 @@
 
   &__row {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
+    transition: 1s;
+
+    &--change {
+
+      .company__btn--save,
+      .company__btn--cancel {
+        display: none;
+      }
+    }
+
+    &--save {
+
+      .company__btn--change {
+        display: none;
+      }
+    }
   }
 
   &__col {
@@ -26,7 +42,7 @@
     padding: 6px 6px 16px 6px;
     width: 240px;
     min-height: 58px;
-
+    margin-right: 54px;
   }
 
   &__name {
@@ -78,7 +94,19 @@
       }
     }
 
-    &--delete {
+    &--save {
+      color: #F0F4F2;
+      background-color: $btn-color;
+      margin-right: 16px;
+
+      &:hover {
+        color: $btn-color;
+        background-color: transparent;
+        border-color: $btn-color;
+      }
+    }
+
+    &--cancel {
       color: $btn-color;
       background-color: transparent;
       border-color: $btn-color;
