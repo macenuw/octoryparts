@@ -1,0 +1,81 @@
+.car-list {
+  min-height: calc(100vh - 64px);
+
+  &__inner {
+    padding: 40px 55px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 38px;
+  }
+
+  &__list {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--insurence {
+      width: 90%;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid black;
+    }
+
+    &--title {
+      background-color: rgba(26, 64, 35, 0.47);
+    }
+  }
+
+  &__col {
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 4px;
+    width: 100%;
+
+    &:not(:last-child) {
+      border-right: 1px solid black;
+    }
+
+
+    &--number {
+      min-width: 30px;
+      max-width: 40px;
+    }
+
+    &--year {
+      min-width: 80px;
+    }
+
+    &--to-date {
+      min-width: 80px;
+    }
+
+    &--part {
+      min-width: 80px;
+    }
+
+    &--listing {
+      min-width: 80px;
+    }
+  }
+}
