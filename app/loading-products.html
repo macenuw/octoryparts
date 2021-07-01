@@ -101,20 +101,24 @@
                                 </div>
                             </div>
                             <div class="loading-products__enter-inner">
-                                <input class="loading-products__input --position input-style" type="text">
+                                <div class="loading-products__enter-top">
+                                <input class="loading-products__input --position input-style" type="text" placeholder="Позиция">
                                 <select class="my-orders__select my-orders__select--user shadow home__select home__select--mb-36 home__select--brand shadow"" name="user">
-                                    <option value="" selected disabled hidden>Выберите клиента </option>
+                                    <option value="" selected disabled hidden>Выберите тип </option>
                                     <option value="something">ООО “Подорожник”</option>
                                     <option value="something">ООО “Автобан”</option>
                                     <option value="something">ООО “НАК”</option>
                                 </select>
-                                <input class="loading-products__input --name input-style" type="text">
-                                <input class="loading-products__input --count input-style" type="text">
+                            </div>
+                            <div class="loading-products__enter-bottom">
+                                <input class="loading-products__input --name input-style" type="text" placeholder="Введите наименование">
+                                <input class="loading-products__input --count input-style" type="text" placeholder="Введите количество">
                                 <button class="loading-products__btn --download bold">Загрузить</button>
                                 <button 
                                 class="loading-products__btn loading-products__btn--undo bold">
                                 Отменить
                             </button>
+                        </div>
                             </div>
                         
                     </div>
