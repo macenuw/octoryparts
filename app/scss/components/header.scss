@@ -9,6 +9,9 @@
   background-color: white;
   max-width: calc(100vw - 295px);
 
+  &--full {
+    max-width: 100vw;
+  }
 
   &__btn {
     padding: 7px 11px;
