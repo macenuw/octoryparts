@@ -1,5 +1,9 @@
 .content {
   width: 100%;
-  width: calc(100vw - 295px);
+  max-width: calc(100vw - 295px);
   padding-top: 64px;
+
+  &--full {
+    max-width: 100vw;
+  }
 }
