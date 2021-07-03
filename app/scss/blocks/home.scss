@@ -1,6 +1,8 @@
 .home {
   padding: 43px 55px;
   height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
 
   &__title {
     line-height: 24px;
