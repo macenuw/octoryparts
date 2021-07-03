@@ -43,10 +43,14 @@
     padding: 15px 29px 48px;
     margin-bottom: 18px;
     height: 100%;
+    min-height: 300px;
+    max-height: 400px;
   }
-&__list--mb-36{
-  margin-bottom: 36px;
-}
+
+  &__list--mb-36 {
+    margin-bottom: 36px;
+  }
+
   &__btn {
     padding: 8px 14px 7px;
     border-radius: 5px;
