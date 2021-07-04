@@ -6,34 +6,37 @@
         line-height: 24px;
         margin-bottom: 38px;
     }
-    &__wrapper{
-        display: flex; 
+
+    &__wrapper {
+        display: flex;
         justify-content: space-between;
-       align-items: baseline;
+        align-items: flex-start;
     }
-   &__search-inner{
-      max-width: 536px;
-      width: 100%;
-      
-   }
-    &__input{
+
+    &__search-inner {
+        max-width: 536px;
+        width: 100%;
+    }
+
+    &__input {
         max-width: 387px;
     }
 
-    .file-btn  {
-        &__label{
-            font-family: "Roboto";
+    .file-btn {
+        &__label {
             font-weight: 700;
             font-size: 19px;
             line-height: 24px;
             color: #fff;
             padding: 0 29px;
-            width: 200px;
+            width: 216px;
             max-width: 100%;
             margin: auto;
             display: block;
             border-radius: 5px;
             background-color: $btn-color;
+            border: 2px solid transparent;
+
             &:hover {
                 border: 2px solid $btn-color;
                 color: $btn-color;
@@ -41,21 +44,48 @@
                 background-color: transparent;
             }
         }
+
         &__input {
-           width: 0.1px;
-           height: 0.1px;
-           opacity: 0;
-           overflow: hidden;
-           position: absolute;
-           z-index: -1;
-           & + .js-labelFile {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              padding: 9.5px 29px;
-              cursor: pointer;
-          }
-       } 
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+
+            &+.js-labelFile {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 9.5px 29px;
+                cursor: pointer;
+            }
+        }
     }
-    
+
+    .car-list__row:not(:last-child) {
+        border-bottom: none;
+    }
+
+    .car-list__row:hover:not(:first-child) {
+        background-color: #FFEB9E;
+    }
+
+    .car-list__col {
+        width: 200px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .car-list__col--name {
+        flex-grow: 2;
+    }
+
+    .car-list__col--name {
+        color: #2F80ED;
+    }
+
+    .car-list__row--title .car-list__col--name {
+        color: black;
+    }
 }
