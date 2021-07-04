@@ -41,6 +41,7 @@
   }
 
   &__col {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: normal;
     font-size: 13px;
@@ -76,6 +77,14 @@
 
     &--listing {
       min-width: 80px;
+    }
+
+    &--img-none {
+      color: #FF4D4F;
+    }
+
+    &--amount-none {
+      color: #FF4D4F;
     }
   }
 }
